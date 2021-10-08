@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Clima del dia</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="page-name"><i class="fas fa-cloud-sun">Clima App</i></h1>
+    </header>
+    <main class="main">
+        <form class="form" id="searchForm" novalidate>
+            <input
+            class="input"
+            id="searchInput"
+            type="text"
+            placeholder="Escribir una ciudad"
+            />
+            <button class="btn btn-submit" id="searchBtn" type="submit">
+                Buscar
+            </button>
+        </form>
+        <div class="search-result" id="searchResult">
+            <h3 id="cityName"></h3>
+            <p id="temperature"></p>
+            <p id="tempMin"></p>
+            <p id="tempMax"></p>
+            <p id="feelsLike"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
